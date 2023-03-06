@@ -1,0 +1,73 @@
+[{
+    "id": 1,
+    "Name": "Ashe",
+    "Surname": "Mason",
+    "Sex": "male",
+    "Email": "ashe.mason@gmail.com",
+    "Phone": 9891660262,
+    "City": "Toranto"
+},
+{
+    "id": 2,
+    "Name": "Fred",
+    "Surname": "Aaron",
+    "Sex": "male",
+    "Email": "fred.aaron@gmail.com",
+    "Phone": 9991660262,
+    "City": "Toranto"
+},
+{
+    "id": 3,
+    "Name": "Daniel",
+    "Surname": "Auteul",
+    "Sex": "male",
+    "Email": "daniel.aaron@gmail.com",
+    "Phone": 9991660262,
+    "City": "California"
+},
+{
+    "id": 4,
+    "Name": "RIcky",
+    "Surname": "Ponting",
+    "Sex": "male",
+    "Email": "ricky.ponting@gmail.com",
+    "Phone": 888888222,
+    "City": "London"
+},
+{
+    "id": 5,
+    "Name": "Adam",
+    "Surname": "Zampa",
+    "Sex": "female",
+    "Email": "adam.zampa@gmail.com",
+    "Phone": 72784833822232,
+    "City": "Sydney"
+},
+{
+    "id": 6,
+    "Name": "Mag",
+    "Surname": "Lanning",
+    "Sex": "female",
+    "Email": "mag.lenning@gmail.com",
+    "Phone": 72784833822232,
+    "City": "Colombo"
+},
+{
+    "id": 5,
+    "Name": "Adam",
+    "Surname": "Zampa",
+    "Sex": "female",
+    "Email": "adam.zampa@gmail.com",
+    "Phone": 72784833822232,
+    "City": "Sydney"
+},
+{
+    "id": 6,
+    "Name": "Cris",
+    "Surname": "Lynn",
+    "Sex": "male",
+    "Email": "cris.lynn@gmail.com",
+    "Phone": 72784833822232,
+    "City": "melbourne"
+}
+]
