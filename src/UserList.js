@@ -1,22 +1,22 @@
 import React, { useEffect, useState } from 'react';
 
 let heighlightList = [
-    { columnid: "Name", rowid: 6 },
-    { columnid: "Surname", rowid: 1 },
-    { columnid: "Sex", rowid: 5 },
-    { columnid: "Sex", rowid: 2 },
-    { columnid: "Name", rowid: 2 },
-    { columnid: "Email", rowid: 1 },
-    { columnid: "Phone", rowid: 2 },
-    { columnid: "City", rowid: 3 },
-    { columnid: "Name", rowid: 3 },
-    { columnid: "Surname", rowid: 3 },
-    { columnid: "Name", rowid: 2 },
-    { columnid: "Email", rowid: 1 },
-    { columnid: "Phone", rowid: 2 },
-    { columnid: "City", rowid: 1 },
-    { columnid: "Name", rowid: 4 },
-    { columnid: "Surname", rowid: 5 },
+    { columnid: "Name", rowid: 6, borderColor: "#00ff00" },
+    { columnid: "Surname", rowid: 1, borderColor: "#0000ff" },
+    { columnid: "Sex", rowid: 5, borderColor: "#0000ff" },
+    { columnid: "Sex", rowid: 2, borderColor: "orange" },
+    { columnid: "Name", rowid: 2, borderColor: "orange" },
+    { columnid: "Email", rowid: 1, borderColor: "#00ff00" },
+    { columnid: "Phone", rowid: 2, borderColor: "#0110ff" },
+    { columnid: "City", rowid: 3, borderColor: "#d11dff" },
+    { columnid: "Name", rowid: 3, borderColor: "#d11dff"},
+    { columnid: "Surname", rowid: 3 , borderColor: "#d11dff"},
+    { columnid: "Name", rowid: 2, borderColor: "orange"},
+    { columnid: "Email", rowid: 1, borderColor: "#0000ff"  },
+    { columnid: "Phone", rowid: 2, borderColor: "orange" },
+    { columnid: "City", rowid: 1, borderColor: "#0000ff" },
+    { columnid: "Name", rowid: 4, borderColor: "#ddd000"},
+    { columnid: "Surname", rowid: 5, borderColor: "#0000ff"  },
 ]
 const UserList = (props) => {
 
@@ -54,22 +54,26 @@ const UserList = (props) => {
                 return (<tr rowid = {key}>
                     
                     <td columnid ={item.Name}
-                     className={hightlight.rowid === key && hightlight.columnid === "Name" ? `highlightedBorder` : `borderTd`}
+                     style={hightlight.rowid === key && hightlight.columnid === "Name" ? { border: `3px solid ${hightlight.borderColor}` }: {"border-Color":'grey'}}
                     >{item.Name}</td>
                     <td columnid ={item.Surname}
-                    className={hightlight.rowid === key && hightlight.columnid === "Surname" ? `highlightedBorder` : `borderTd`}
+                    style={hightlight.rowid === key && hightlight.columnid === "Surname" ? { border: `3px solid ${hightlight.borderColor}` } : {"border-Color":'grey'}}
                     >{item.Surname}</td>
                     <td columnid ={item.Sex}
-                    className={hightlight.rowid === key && hightlight.columnid === "Sex" ? `highlightedBorder` : `borderTd`}
+                    style={hightlight.rowid === key && hightlight.columnid === "Sex" ? { border: `3px solid ${hightlight.borderColor}` } : {"border-Color":'grey'}}
+
                     >{item.Sex}</td>
                     <td columnid ={item.Email}
-                    className={hightlight.rowid === key && hightlight.columnid === "Email" ? `highlightedBorder` : `borderTd`}
+                    style={hightlight.rowid === key && hightlight.columnid === "Email" ? { border: `3px solid ${hightlight.borderColor}` } : {"border-Color":'grey'}}
+
                     >{item.Email}</td>
                     <td columnid ={item.Phone}
-                    className={hightlight.rowid === key && hightlight.columnid === "Phone" ? `highlightedBorder` : `borderTd`}
+                    style={hightlight.rowid === key && hightlight.columnid === "Phone" ? { border: `3px solid ${hightlight.borderColor}` } : {"border-Color":'grey'}}
+
                     >{item.Phone}</td>
                     <td columnid ={item.City}
-                    className={hightlight.rowid === key && hightlight.columnid === "City" ? `highlightedBorder` : `borderTd`}
+                    style={hightlight.rowid === key && hightlight.columnid === "City" ? { border: `3px solid ${hightlight.borderColor}` } : {"border-Color":'grey'}}
+
                     >{item.City}</td>
                 </tr>)
             })}
